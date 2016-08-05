@@ -7,7 +7,7 @@
 */
 import java.util.Scanner;
 
-public class InputStringToInt
+public class _01_InputStringToInt
 {
 	public static void main(String[] args)
 	{

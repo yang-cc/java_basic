@@ -6,7 +6,7 @@
  * 来源：慕课网
  * 本文原创发布于慕课网 ，转载请注明出处，谢谢合作！
  */
-public class CountingBits {
+public class _02_CountingBits {
     public static void main(String[] args) {
         int num = 7;
         System.out.println("num:" + num);
