@@ -16,6 +16,14 @@ public class _03_SumOfTwoInt {
     }
 //    异或又被称其为“模2加法“
 //    设置变量recipe模拟进位数字，模拟加法的实现过程
+/*      r   recipe  c    a     b
+        0   1       0   (3)   (10)
+        ----------------------
+        1   2       0    1   5
+        1   4       1    0   2
+        5   8       0    0   1
+       (13) 16      0    0   0
+*/        
     public static int getSum1(int a, int b){
         int r = 0, c = 0, recipe = 1;
         while ((a | b | c) != 0) {
