@@ -1,7 +1,13 @@
-
+/*
+	Implement atoi to convert a string to an integer.
+	作者： fengsehng
+	链接：http://www.imooc.com/article/11283
+	来源：慕课网
+	本文原创发布于慕课网 ，转载请注明出处，谢谢合作！
+*/
 import java.util.Scanner;
 
-public class Main
+public class InputStringToInt
 {
 	public static void main(String[] args)
 	{
@@ -32,14 +38,14 @@ public class Main
 			}
 			//取得数字部分，遇到溢出和非数字退出
 			long number = 0;
-			System.out.println("---index:string---");
+			//System.out.println("---index:string---");
 			for(;index < str.length();index++){
 				if(str.charAt(index) < '0' || str.charAt(index) > '9'){
 					break;
 				}
-				System.out.println(index + ":" + str.charAt(index));
+				//System.out.println(index + ":" + str.charAt(index));
 				number = number *10 + (str.charAt(index) - '0');
-				System.out.println("number:" + number);
+				//System.out.println("number:" + number);
 				if(number >= Integer.MAX_VALUE){
 					break;
 				}
